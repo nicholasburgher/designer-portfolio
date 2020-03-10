@@ -1,0 +1,166 @@
+:root {
+  --doc-purple: #5F6CAF;
+  --doc-orange: #FFB677;
+  --doc-red: #FF8364;
+  --doc-sky: #EDF7FA;
+}
+
+.bg-purple {
+  background-color: var(--doc-purple);
+  color: var(--doc-sky);
+}
+.bg-orange {
+  background-color: var(--doc-orange);
+}
+.bg-red {
+  background-color: var(--doc-red);
+  color: white;
+}
+.bg-sky {
+  background-color: var(--doc-sky);
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  max-width: 700px;
+}
+
+/* NAVIGATION */
+
+.navbar-light .navbar-brand {
+  color: var(--doc-purple);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.navbar-light .navbar-nav .nav-link {
+  font-size: 1.2rem;
+  color: var(--doc-purple);
+  opacity: .5;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link:hover {
+  font-size: 1.2rem;
+  color: var(--doc-purple);
+  opacity: 1;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+.dropdown-menu.show {
+  border-color: var(--doc-purple);
+  opacity: .92;
+}
+
+a:not([href]).dropdown-item {
+  cursor: pointer;
+  color: var(--doc-purple);
+
+}
+.dropdown-item:hover {
+  background-color: var(--doc-sky);
+}
+.dropdown-item:active {
+  background-color: var(--doc-purple);
+  color: white !important;
+}
+
+/* INTRO SECTION */
+#intro {
+  margin-top: 80px;
+}
+
+h2 {
+  color: var(--doc-purple);
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: .35rem;
+  text-transform: uppercase;
+}
+
+h4 {
+  color: var(--doc-purple);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+}
+.headline-text {
+  font-size: 5rem;
+  font-weight: 900;
+  color: var(--doc-red);
+}
+.headline-text div {
+  width: 60px;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+
+/* WORK SECTION */
+.anchor {
+  position: relative;
+  top: -50px;
+}
+
+.caption {
+  color: var(--doc-purple);
+
+  font-weight: 300;
+  padding: 1rem 0 1rem;
+  text-align: left;
+}
+
+.caption-white {
+  color: white;
+}
+
+.caption em {
+  font-size: 1.25rem;
+}
+
+.caption strong {
+  font-weight: 700;
+}
+
+.tab-over {
+  min-width: 60px;
+}
+
+.bc-img-1 {
+  z-index: 20;
+  position: absolute;
+  left: 0px;
+}
+
+.bc-img-2 {
+  z-index: 10;
+  margin-top: 20%;
+}
+
+/* CONTACT SECTION */
+
+.contact-box {
+  border: solid 1px rgba(255,255,255,.25);
+  border-radius: .5rem;
+  background-color: var(--doc-purple);
+  padding: 1.5rem;
+}
+.contact-box h2 {
+  color: var(--doc-sky);
+  font-size: 1.75rem;
+  letter-spacing: .25rem;
+}
+
+.contact-box, .contact-box a {
+  color: var(--doc-sky);
+}
+
+.bg-special {
+  background: url('../images/logos/dot pattern.png') repeat;
+  background-size: 150px;
+  height: 75px;
+  width: 100%;
+}
