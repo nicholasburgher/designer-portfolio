@@ -36,14 +36,23 @@ body {
   text-transform: uppercase;
 }
 .navbar-light .navbar-nav .nav-link {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--doc-purple);
   opacity: .5;
 }
+
+
+
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link:hover {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--doc-purple);
   opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link:hover {
+    font-size: 1.2rem;
+  }
 }
 
 .nav-item {
@@ -75,19 +84,32 @@ a:not([href]).dropdown-item {
 
 h2 {
   color: var(--doc-purple);
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 900;
   letter-spacing: .35rem;
   text-transform: uppercase;
 }
 
-h4 {
+#intro h4 {
   color: var(--doc-purple);
-  font-size: 1rem;
+  font-size: .80rem;
   font-weight: 500;
-  letter-spacing: .125rem;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
+
+@media only screen and (min-width: 667px) {
+  h2.my-name {
+    font-size: 2.5rem;
+  }
+  #intro h4 {
+    font-size: 1rem;
+    letter-spacing: .125rem;
+  }
+}
+
+
+
 .headline-text {
   font-size: 5rem;
   font-weight: 900;
